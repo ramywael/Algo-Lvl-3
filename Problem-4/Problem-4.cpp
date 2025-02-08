@@ -2,7 +2,8 @@
 
 /*
 
-Write a Program to fill a 3x3 matrix with random numbers and sum each Col
+Write a Program to fill a 3x3 matrix with random numbers and 
+sum each Col in another array and print them
 
 */
 #include <iostream>
@@ -44,12 +45,26 @@ int SumCol(int arr[3][3], short rows, short cols) {
 }
 
 
-void PrintEachColSum(int arr[3][3], int rows, int cols) {
-	cout << "\nThis is the following sum of each Col in the matrix \n";
+void StoreResultInOneArr(int arr[3],int arr2[3][3], int cols) {
 	for (int i = 0;i < cols;i++) {
-		cout << setw(3) << "Col  " << (i + 1) << " Sum = " << SumCol(arr, 3, i) << "\n";
+		arr[i] = SumCol(arr2, 3, i);
 	}
 }
+
+
+
+
+
+void PrintEachColSum(int arr[3], int length) {
+	cout << "\nThis is the following sum of each Col in the matrix \n";
+	for (int i = 0;i < length;i++) {
+		cout << setw(3) << "Col  " << (i + 1) << " Sum = " << arr[i] << "\n";
+	}
+}
+
+
+
+
 //void PrintRowsSumArray(int arr[3], short rows) {
 //
 //	for (int i = 0;i < rows;i++) {
@@ -75,6 +90,8 @@ int main()
 	int arrResultSum[3];
 	FillTwoDiminsionalAraay(matrix);
 	PrintAllElementsOfArray(matrix);
-	PrintEachColSum(matrix,3,3);
+	StoreResultInOneArr(arrResultSum, matrix, 3);
+	PrintEachColSum(arrResultSum, 3);
+
 	system("pause>0");
 }
