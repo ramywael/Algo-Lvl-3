@@ -1,7 +1,11 @@
 
 
-// Write a Program to fill a 3x3 matrix with random numbers and sum each row and store each result in one diaminasional array
+/*
 
+Write a Program to fill a 3x3 matrix with random numbers and sum each row 
+and store each result in one diaminasional array
+
+*/ 
 #include <iostream>
 #include <string>
 #include <iomanip>
