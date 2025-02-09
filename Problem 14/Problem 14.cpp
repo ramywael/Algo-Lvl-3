@@ -16,7 +16,7 @@ void PrintMatrix(int arr[3][3]) {
 		cout << "\n\n";
 	}
 }
-bool CheckIdentity(int arr[3][3], int rows, int cols) {
+bool CheckScaler(int arr[3][3], int rows, int cols) {
 	short firstElement = arr[0][0];
 	for (int i = 0;i < rows;i++) {
 		for (int j = 0;j < cols;j++) {
@@ -41,10 +41,10 @@ int main() {
 	PrintMatrix(arr);
 
 
-	if (CheckIdentity(arr, 3, 3))
-		cout << "YES : Matrix is identity \n";
+	if (CheckScaler(arr, 3, 3))
+		cout << "YES : Matrix is Scaler \n";
 	else
-		cout << "No : Matrix is not identity \n";
+		cout << "No : Matrix is not Scaler \n";
 
 	system("pause>0");
 }
