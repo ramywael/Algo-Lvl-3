@@ -1,6 +1,6 @@
-// Problem 22.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+/*
+ Write A program to print a fibonacci series of 10 by recursion
+*/
 #include <iostream>
 using namespace std;
 
