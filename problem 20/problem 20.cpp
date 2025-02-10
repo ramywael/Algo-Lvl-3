@@ -21,7 +21,7 @@ void PrintMatrix(int arr[3][3]) {
 bool IsPalindrome(int arr[3][3],short rows,short cols) {
 
 	for (int i = 0;i < rows;i++) {
-		for (int j = 0;j < cols;j++) {
+		for (int j = 0;j < cols/2;j++) {
 			if (arr[i][j] != arr[i][cols - j - 1]) {
 				return false;
 			}
