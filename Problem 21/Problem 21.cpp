@@ -7,7 +7,7 @@
 using namespace std;
 
 
-void WriteFibonacci(int length) {
+void WriteFibonacciByLoop(int length) {
     int firstVal=1;
     int secondVal=0;
     int febNumber=0;
@@ -25,7 +25,7 @@ void WriteFibonacci(int length) {
 
 int main()
 {
-    WriteFibonacci(15);
+    WriteFibonacciByLoop(15);
     system("pause>0");
 }
 
