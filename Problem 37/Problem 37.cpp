@@ -1,5 +1,6 @@
 /*
  Write a program to read a string then count each Word in that string
+ in a vector
 */
 
 #include <iostream>
