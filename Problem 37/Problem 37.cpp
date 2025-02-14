@@ -17,7 +17,7 @@ string ReadString() {
 
 }
 
-vector<string> CountEachWordInString(string str, string delimiter) {
+vector<string> AddEachWordInStringIntoVector(string str, string delimiter) {
 	int pos = 0;
 	string sWord;
 	vector<string> splitVector;
@@ -45,7 +45,7 @@ void PrintWachWordInVector(vector<string>& splitVector) {
 int main()
 {
 	string str = ReadString();
-  vector<string> splitVeector=CountEachWordInString(str, " ");
+  vector<string> splitVeector= AddEachWordInStringIntoVector(str, " ");
   PrintWachWordInVector(splitVeector);
 
 	system("pause>0");
