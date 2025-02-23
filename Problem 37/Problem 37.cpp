@@ -45,7 +45,9 @@ void PrintWachWordInVector(vector<string>& splitVector) {
 int main()
 {
 	string str = ReadString();
+
   vector<string> splitVeector= AddEachWordInStringIntoVector(str, " ");
+
   PrintWachWordInVector(splitVeector);
 
 	system("pause>0");
