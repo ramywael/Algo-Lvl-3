@@ -12,7 +12,6 @@ string ReplaceWord(string word, string stringToReplace,string replaced) {
 
 	while ((pos = word.find(stringToReplace)) != std::string::npos) {
 		word = word.replace(pos, stringToReplace.length(), replaced);
-		pos = word.find(stringToReplace);
 	}
 	return word;
 }
