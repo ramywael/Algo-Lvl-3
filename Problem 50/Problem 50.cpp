@@ -173,6 +173,7 @@
 #include<vector>
 #include<fstream>
 
+
 using namespace std;
 
 const string FileName = "MyFile.txt";
@@ -200,7 +201,7 @@ vector<string> SplitString(string line,string sperator="#//#") {
 	}
 
 	if (line != "") {
-		vString.push_back(sWord);
+		vString.push_back(line);
 	}
 
 	return vString;
