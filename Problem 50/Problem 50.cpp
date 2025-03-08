@@ -305,6 +305,8 @@ bool DeleteAccountByAccountNumber(vector<stClient>& vClients,string userInput,st
 		if (tolower(userChoice) == 'y') {
 			MarkAccountByDekete(vClients,userInput);
 			SaveDataToFile(FileName,vClients);
+
+			vClients = LoadDataFromFile();
 			cout << "\n\nAccount Removed Successfully \n";
 			return true;
 		}
